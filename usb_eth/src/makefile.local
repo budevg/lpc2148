@@ -1,0 +1,19 @@
+# Sivan Toledo, 2008
+# local makefile with frequently-changing values.
+
+# Change the path to where you installed WinArm
+GCCBIN = /disk2/tools/gnuarm/bin/
+LPCBIN = 
+
+# change the port number to that of the USB Serial Port
+# (check under device manager in Windows)
+LPC21ISP_PORT = COM9
+LPC21ISP_PORT = /dev/ttyUSB0
+
+TARGET = test-usb-serial
+TARGET = test-usb-mouse
+TARGET = usb-eth
+
+LDSCRIPT = lpc2148-ram
+LDSCRIPT = lpc2148-flash
+
